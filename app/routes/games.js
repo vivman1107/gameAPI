@@ -14,6 +14,9 @@ router.route('/')
     .post(function(request, response) {
         var game = new Game();              // create a new instance of the Game model
         game.name = request.body.name;      // set the game's name (comes from the request)
+        game.platform = request.body.platform;      // set the game's platform (comes from the request)
+        game.format = request.body.format;      // set the game's format (comes from the request)
+        game.genre = request.body.genre;      // set the game's genre (comes from the request)
 
         // save the game and check for errors
         game.save(function(err) {
@@ -51,6 +54,9 @@ router.route('/:game_id')
             if(err)
                 response.send(err);
             game.name = request.body.name;      // update the game's info
+            game.platform = request.body.platform;      // update the game's platform
+            game.format = request.body.format;      // update the game's format
+            game.genre = request.body.genre;      // update the game's genre
 
            // save the game
             game.save(function(err) {
