@@ -26,11 +26,11 @@
   <con:entry key="name" value=""/>
   <con:entry key="format" value=""/>
 </con:parameters><con:parameterOrder><con:entry>game_ID</con:entry><con:entry>name</con:entry><con:entry>platform</con:entry><con:entry>format</con:entry><con:entry>genre</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="4e866bc9-6bb9-49ec-8c45-e34b5cf63577" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Update Game" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Update" id="8ac0c88d-08f8-4be9-9502-4e7c47d2535c"><con:settings/><con:config service="http://localhost:8080" resourcePath="/api/games/{game_ID}" methodName="PUT" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Update" id="e8206f8e-05b6-4e93-8f8c-f01742ac10d8" mediaType="application/x-www-form-urlencoded" postQueryString="true"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/api/games/58ed999a5fb2ab294d5b5374</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
-  <con:entry key="genre" value=""/>
-  <con:entry key="platform" value=""/>
-  <con:entry key="name" value=""/>
-  <con:entry key="format" value=""/>
-  <con:entry key="game_ID" value="58ed999a5fb2ab294d5b5374"/>
+  <con:entry key="genre" value="Platformer"/>
+  <con:entry key="platform" value="Nintendo 64"/>
+  <con:entry key="name" value="Super Mario 64"/>
+  <con:entry key="format" value="Cartridge"/>
+  <con:entry key="game_ID" value="58eee823aae58c0ba8784b57"/>
 </con:parameters><con:parameterOrder><con:entry>game_ID</con:entry><con:entry>name</con:entry><con:entry>platform</con:entry><con:entry>format</con:entry><con:entry>genre</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="de161882-fe9a-4871-933d-0955cd4eed09" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Delete Game" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Delete" id="7618131d-ee93-409c-b089-17946968c796"><con:settings/><con:config service="http://localhost:8080" resourcePath="/api/games/{game_ID}" methodName="DELETE" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Delete" id="5bd81ff8-7878-4d4f-9808-ec2950c10356" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/api/games/58ed999a5fb2ab294d5b5374</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
   <con:entry key="genre" value=""/>
   <con:entry key="platform" value=""/>

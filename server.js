@@ -15,6 +15,13 @@ app.use(bodyParser.json());
 
 var port = process.env.PORT || 8080;        // set our port
 
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  res.header('Access-Control-Allow-Methods', 'POST, GET, PUT, DELETE, OPTIONS');
+  next();
+});
+
 // ROUTES FOR OUR API
 // ==============================================================================================================
 var games = require('./app/routes/games');   // get the game router module
